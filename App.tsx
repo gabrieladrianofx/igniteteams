@@ -9,7 +9,7 @@ import {
 
 import theme from "./src/theme";
 
-import { NewGroup } from "@components/NewGroup";
+import { Players } from "@components/Players";
 import { Loading } from "@components/Loading";
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
