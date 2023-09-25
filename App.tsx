@@ -9,7 +9,7 @@ import {
 
 import theme from "./src/theme";
 
-import { Players } from "@components/Players";
+import { Players } from "@screens/Players";
 import { Loading } from "@components/Loading";
 
 export default function App() {
