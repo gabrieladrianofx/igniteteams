@@ -8,6 +8,7 @@ import { Header } from "@components/Header";
 import { Filter } from "@components/Filter";
 import { Highlight } from "@components/Highlight";
 import { ButtonIcon } from "@components/ButtonIcon";
+import { PlayerCard } from "@components/PlayerCard";
 
 export function Players() {
   const [team, setTeam] = useState("Time A");
@@ -44,6 +45,14 @@ export function Players() {
 
         <NumbersOfPlayers>{players.length}</NumbersOfPlayers>
       </HeaderList>
+
+      <FlatList
+        data={players}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <PlayerCard name={item} onRemove={() => {}} />
+        )}
+      />
     </Container>
   );
 }
