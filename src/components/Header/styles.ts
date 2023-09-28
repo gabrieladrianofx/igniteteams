@@ -9,8 +9,6 @@ export const Container = styled.View`
 
   align-items: row;
   justify-content: center;
-
-  margin-top: 30px;
 `;
 
 export const Logo = styled.Image`
